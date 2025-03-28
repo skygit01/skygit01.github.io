@@ -1,0 +1,129 @@
+/*reset defaut styles*/ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  font-size: 16px;
+  padding: 0 2rem;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;  
+}
+
+/* Header */
+header{
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #3498db;
+}
+/*LISTING SECTION*/
+#Listings {
+  padding: 2rem;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.property-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.property-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.property-card button{
+  background-color: #3498dd;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.property-card :hover{
+  background-color: #2980b9;
+}
+
+/*Contact section*/
+#contact {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+button [type="submit"]:hover {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+button [type="submit"]:hover {
+  background-color: #27ae60;
+}
+
+/* footer */
+footer{
+  text-align: center;
+  padding: 1rem;
+  background-color: #2c3e50;
+  color: white;
+
+  .fa-x-twitter
+  { 
+    font-size: 24px; /*adjust size*/
+    color: #000; /*black, like X's branding*/
+    margin-right: 8px; /*space between icon and handle*/
+    vertical-align: middle;
+  }
+
+  .fa-x-twitter:hover{
+    color:#1DA1F2; /* optional:twitter-like blue on hover*/
+  }
+  a {
+    text-decoration: none; /*remove underline from link*/
+    color: #000;
+  }
+}
